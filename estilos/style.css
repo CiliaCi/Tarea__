@@ -1,0 +1,810 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+/* CSS */
+
+header{
+    background-color:#9D84B7;
+    box-shadow: 3px 3px 3px #091353;
+    color: white;
+    height: 100px;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.navegador{
+    padding: 10px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'izquierdo central central central derecho';
+    align-items: center;
+}
+/*
+.navegador ul{
+    list-style-type: none;
+    color: #091353;
+}.navegador ul li a{
+    text-decoration: none;
+    font-size: 24px;
+}
+*/
+
+
+.izquierdo{
+    height: 100%;
+    padding: 10px;
+    align-content: center;
+    margin-top: 15px;
+}
+
+/*
+.izquierdo ul li{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}*/
+
+.izquierdo ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.izquierdo ul li{
+    border: 3px solid #091353;
+    box-shadow: 2px 2px #091353;
+    border-radius: 3px;
+    padding: 5px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.izquierdo ul li:hover{
+    border: 3px solid #B2F9FC;
+}
+
+.izquierdo ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #091353;
+    transition: 0.5s;
+}
+
+.izquierdo ul li a:hover{
+    color: #B2F9FC;
+}
+
+.central ul{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.central ul li{ 
+    border: 3px solid #091353;
+    box-shadow: 2px 2px #091353;
+    border-radius: 3px;
+    padding: 5px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.central ul li:hover{
+    border: 3px solid #B2F9FC;
+}
+
+.central ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #091353;
+    transition: 0.5s;
+}
+
+.central ul li a:hover{
+    color: #B2F9FC;
+}
+
+.derecho ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.derecho ul li{
+    border: 3px solid #091353;
+    box-shadow: 2px 2px #091353;
+    border-radius: 3px;
+    padding: 5px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.derecho ul li:hover{
+    border: 3px solid #B2F9FC;
+}
+
+.derecho ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #091353;
+    transition: 0.5s;
+}
+
+.derecho ul li a:hover{
+    color: #B2F9FC;
+}
+
+.n1{
+    grid-area: izquierdo;
+    padding: 15px;
+}
+
+.n2{
+    grid-area: central;
+    padding: 15px;
+}
+
+.n3{
+    grid-area: derecho;
+    padding: 15px;
+}
+
+
+
+/*
+.menu{
+    padding: 12px;
+    width: 100%;
+    height: 50%;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #091353;
+}*/
+
+/*
+.logo{
+    padding:1px;
+    height: 0px;
+}
+
+.logo ul{
+    display: inline-block;
+    
+    text-align: left;
+    
+}
+
+.logo ul li{
+    display: inline-block;
+    border:  solid 3px #091353;
+    border-radius: 2px;
+    margin: 5px;
+    padding: 5px;
+    list-style-type: none;
+}
+
+.logo ul li a{
+    text-decoration: none;
+    color: #091353;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.menucentral{
+    width: 35%;
+}
+
+.menucentral ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menucentral ul li{       
+    list-style-type: none;
+    border:  solid 3px #091353;
+    border-radius: 2px;
+    margin: 5px;
+    padding: 5px;
+    transition: .4s;
+}
+
+.menucentral ul li:hover{
+    border: solid 3px #D5D5D5;
+}*/
+
+/*
+.menuderecho{
+    width: 15%;
+}*/
+
+/*
+.menuderecho ul{
+    text-align: right;
+    top: 30px;
+  }*/
+
+/*
+.menuderecho ul{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.menuderecho ul li{
+    display: inline-block;
+    border:  solid 3px #091353;
+    border-radius: 2px;
+    margin: 5px;
+    padding: 5px;
+    transition: .4s;
+}
+
+.menuderecho ul li:hover{
+    border: solid 3px #D5D5D5;
+}*/
+
+/* MAIN */
+/* FLEXBOX */
+
+/*                      I N I C I O                    */
+
+
+
+.fotoinicio{
+    display: flex;
+    justify-content: center;
+    
+        
+}
+
+.fotoinicio img{
+    width: 800px;
+    margin-bottom: -200px;
+    padding-top: 10px;
+}
+
+.aparte{
+    border: solid 3px #091353;
+    padding: -50px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: #ebe4f4;
+    margin: 200px;
+}
+.principal {
+    color: #091353;
+    font-size: 20px;
+    padding: 50px;
+    padding-top: 15px;
+    display: flex;   
+    justify-content: center;
+
+}
+
+.masprincipal{
+    text-decoration: none;   
+    padding: 10px;
+    margin: 10px;
+    margin-top: -50px;
+
+}
+
+.masprincipal ul{
+    text-align: center;     
+    text-decoration: none;
+}
+
+.masprincipal ul li{
+    list-style-type: none;
+    display: inline-block;
+    border:  solid 3px transparent;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    transition: .4s;
+}
+
+.masprincipal ul li:hover{
+    border:  solid 3px #091353;
+    }
+
+
+.masprincipal ul li a{
+    text-decoration: none;
+    color: #091353;
+}
+
+
+/*                   P R O D U C T O S                   */
+/*              F L E X B O X                          */
+.cajas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    gap: 40px;
+    padding: 40px;
+}
+.caja {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caja:hover{
+    background-color: #4c5ab0;
+}
+
+.letra :hover{
+    color: white;
+}
+
+.letra h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+
+.caja img{
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.caja img:hover{
+    width: 100%;
+}
+
+.c1{
+    
+    width: 25%;
+    height: 280px; 
+    border: solid;
+    border-color: #9D84B7;
+    border-width: 4px;
+    border-radius: 5px;
+
+}
+
+.c2{
+    
+    width: 25%;
+    height: 280px; 
+    border: solid;
+    border-color: #9D84B7;
+        border-width: 4px;
+    border-radius: 5px;
+
+}
+
+.c3{
+    
+    width: 25%;
+    height: 280px; 
+    border: solid;
+    border-color: #9D84B7;
+        border-width: 4px;
+    border-radius: 5px;
+
+}
+
+.c4{
+    
+    width: 25%;
+    height: 280px;
+    border: solid;
+    border-color: #9D84B7;
+    border-width: 4px;
+    border-radius: 5px;
+
+}
+
+.c5{
+
+    width: 25%;
+    height: 280px; 
+    border: solid;
+    border-color: #9D84B7;
+    border-width: 4px;
+    border-radius: 5px;
+
+}
+
+.c6{
+    
+    width: 25%;
+    height: 280px; 
+    border: solid;
+    border-color: #9D84B7;
+        border-width: 4px;
+    border-radius: 5px;
+
+}
+
+.c7{
+
+    width: 25%;
+    height: 280px; 
+    border: solid;
+    border-color: #9D84B7;
+        border-width: 4px;
+    border-radius: 5px;
+
+}
+
+/*          M I    C U E N T A                   */
+
+/* MAIN CON FLEX
+.cajadesesion{
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    color: #091353;
+}
+
+
+.registrate{
+    border-right: solid 3px #091353;
+    padding-right: 100px;
+    text-align: center;
+    
+}
+
+.registrate h3{
+    font-size: 45px;
+}
+
+form, label{
+    font-size: 20px;
+}
+
+
+
+.isesion{
+    text-align: center
+}
+
+.isesion h3{
+    font-size: 45px;
+} */
+
+/* MAIN CON BOOTSRAP */
+
+.form-control{
+    width: 40%;
+}
+
+/*                     G R I D                       */
+/*                   H I S T O R I A                 */
+
+
+
+.grillas{
+    padding: 10px;
+    padding-left: 200px;
+    display: grid;
+    gap: 15px;
+    padding-top: 50px;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    'area1 area2 area2 area3'
+    'area4 area5 area5 area6'
+    'area7 area7  area8 area8';
+}
+/* - para que se haga columna cuando la pantalla se pone angosta
+@media(min-width:55em){
+    .grillas {
+        grid-auto-flow: col;
+    }
+}
+*/
+.grilla{
+    width: 100%;
+    height: 200px;
+    color: #091353;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px#091353;
+    border: 3px solid  #9D84B7;   
+    
+}
+
+.grilla img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.grilla h4{
+    font-size: 20px;
+}
+.grilla p{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.g1{
+    grid-area: area1;
+    
+}
+
+.g2{
+    grid-area: area2;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+.g3{
+    grid-area: area3;
+}
+
+.g4{
+    grid-area: area4;
+}
+
+.g5{
+    grid-area: area5;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.g6{
+    grid-area: area6;
+}
+
+.g7{
+    grid-area: area7;
+    padding: 5px;
+   
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.g8{
+    grid-area: area8;
+    padding: 5px;    
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.historia{
+    background-color: #cfd3d3;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.historia__video{
+    padding: 15px;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #B2F9FC;
+}
+
+
+
+/*               M I    C A R R I T O                          */
+
+
+
+.altocarrito{
+    min-height: 100vh; /* ayuda a que el main tenga el tamaño completo aunque no tenga informacion así el footer cae*/
+    max-height: 100vh;
+}
+
+
+/* FOOTER */
+.bi{
+    width: 50px;
+    height: 50px;
+}
+/*               M E D I A     Q U E R I E S                   */
+
+/*
+@media (max-width: 1200px) {
+
+
+}*/
+
+@media (max-width:768px) {
+
+    .grillas {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+/*
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .navegador{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'izquierdo central derecho';
+    }*/
+}
+
+
+
+@media (max-width:576px) {
+
+    .grillas {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    /*.navegador{
+        display: flex;
+        flex-direction: column;
+    }*/
+
+    header{
+        height: 60px;
+    }
+    
+    .navegador{
+        padding: 5px;
+        height: 50px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'izquierdo central central derecho';
+    }
+ 
+    .izquierdo{
+        height: 100%;
+        padding: 0px;
+        align-content: center;
+        margin-top: 0px;
+    }
+    
+    .izquierdo ul{
+        gap: 10px;
+    }
+    
+    .izquierdo ul li{
+        padding: 0px;
+    }
+    
+    .izquierdo ul li a{
+        font-size: 10px;
+    }
+    
+    .central ul{ 
+        gap: 10px;
+    }
+    
+    .central ul li{ 
+
+        padding: 0px;
+    }
+
+    .central ul li a{
+        font-size: 10px;
+
+    }
+    
+    .derecho ul{
+        gap: 10px;
+    }
+    
+    .derecho ul li{
+        border-radius: 3px;
+        padding: px;
+    }
+
+    .derecho ul li a{
+        font-size: 10px;
+    }
+
+    .n1{
+        padding: 5px;
+    }
+    
+    .n2{
+        padding: 5px;
+    }
+    
+    .n3{
+        padding: 5px;
+    }
+
+    .bi{
+        width: 10   px;
+        height: 10px;
+    }
+}
+
+
+/*
+@media (max-width:480px) {
+
+    .grillas {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .navegador{
+        display: flex;
+        flex-direction: column;
+    }
+}*/
