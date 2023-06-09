@@ -49,20 +49,41 @@
 
     <main>
 
-        <section class="fotoinicio">
-            <img src="photos/multiple-inicio.jpg" alt="cinco perros pequeños con ropa y gafas "/>
-        </section>  
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="photos/multiple-inicio.jpg" class="d-block w-100" alt="cinco perros pequeños con ropa y gafas">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="photos/2multiple-inicio.jpg" class="d-block w-100" alt="cuatro perros de diferentes tamaños con ropa">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="photos/3multiple-inicio.jpg" class="d-block w-100" alt="cuatro perros pequeños con gorros navideños">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="photos/4multiple-inicio.jpg" class="d-block w-100" alt="cuatro perros pequeños con busos de otoño">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>  
 
         <div class="aparte"> 
             <section class="principal">
-                <p><br> Lorem ipsum dolor sit amet consectetur adipisicing <strong> FasionFor2 </strong> elit. Ex voluptatibus optio vel ipsum? Omnis   rem eius nisi voluptatibus. Illo numquam quaerat molestiae necessitatibus qui, veniam provident sequi minima fuga eveniet <em> dignissimos placeat quibusdam </em>eum aspernatur similique, nesciunt, quidem rerum fugiat tenetur labore ullam rem earum excepturi natus. <br> Minus illum maxime nobis, optio consectetur error amet debitis quam rerum dicta. Inventore, vitae nihil neque fuga possimus laborum voluptates natus, laudantium tempora et rerum, explicabo totam. Est, possimus? Facilis veniam quasi quas dolor quia quibusdam cum incidunt ullam necessitatibus odio consequuntur dolores aspernatur doloremque numquam veritatis dicta ut, labore nemo fugiat animi fugit.</br></p>
+                <p><br> La moda para mascotas ha experimentado una creciente tendencia en los últimos años, convirtiéndose en una expresión única de estilo y personalidad para nuestros fieles compañeros de cuatro patas. Esta nueva ola de moda no solo se trata de vestir a nuestras mascotas con prendas adorables, sino que también refleja el vínculo especial que compartimos con ellos. Desde elegantes abrigos de invierno hasta camisetas con estampados divertidos, la moda para mascotas ha abierto un mundo de posibilidades creativas.<br>Los amantes de los animales ahora pueden personalizar el guardarropa de sus mascotas con <strong> FasionFor2 </strong> para adaptarse a cada ocasión, desde eventos especiales hasta paseos diarios por el parque. Con una amplia gama de diseños, materiales y accesorios disponibles, la moda para mascotas nos permite celebrar la individualidad y consentir a nuestros queridos amigos peludos con estilo y confort. <em>¡Explora esta fascinante tendencia y haz que tu mascota brille con su propio sentido único de moda!</em></p>
             </section>    
        
 
         <!-- Quiero que sea en forma de foton-->  
             <section class="masprincipal">
                 <ul>
-                    <li> <a href="pages.html/productos.html"> Mostrar Porductos </li>
+                    <li> <a href="pages.html/productos.html"> Mostrar Porductos </a></li>
                 </ul>
             </section>
         </div>
@@ -70,35 +91,24 @@
     </main>
 <!-- ASIDE Define contenidos vagamente relacionados con el resto del contenido de la
             página.-->
-    <footer class="bg-dark">
-        
-        <section class="contactanos">
-            <h4 ><strong> Contactanos: </strong></h4>
-                <ul>
-                    <li> Telf: 555555</li>
-                    <li>  Email: fashionfor2@mail.com </li>
-                </ul>                          
-        </section>
 
-        <section class="mx-auto p-2" style="width: 200px">
-            <h3> Encuentranos en:</h3>
-                <nav> 
-                    <ul>
-                        <li> <a href=""> Instagram</a> </li>
-                        <li> <a href=""> Facebook </a> </li>
-                        <li> <a href=""> TikTok </a> </li>
-                    </ul> 
-                </nav>
-        </section>
 
-        <!-- TITULOS 
-            <h1>ddd</h1>
-    <h2>ddd</h2>
-<h3>    ddd    </h3>
-<h4>ddd</h4>
-<h5>ddd</h5>
-<h6>ddd</h6>-->
-    </footer>
+            <footer class="footer">
+                <div class="container">
+                    <h3 class="redes"> <em>Encuentranos en:</em></h3>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"> <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg></li>
+                        <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/> </svg></li>
+                        <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                        </svg></li>
+                    </ul>
+                    <span class="text-muted">© 2023 Mi Sitio Web. Todos los derechos reservados.</span>
+                </div>
+            </footer>
 
 
     <!-- SCRIPT DEL BOOTSTRAP-->
