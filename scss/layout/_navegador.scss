@@ -1,0 +1,147 @@
+/* HEADER */
+/* CSS */
+header {
+    background-color: #9D84B7;
+    box-shadow: 3px 3px 3px #091353;
+    color: white;
+    height: 100px;
+    font-weight: bold;
+    padding: 0px;
+  }
+  
+  .navegador {
+    padding: 10px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "izquierdo central central central derecho";
+    align-items: center;
+  }
+  
+
+  .izquierdo {
+    height: 100%;
+    padding: 10px;
+    align-content: center;
+    margin-top: 15px;
+  }
+
+  .izquierdo ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  
+  .izquierdo ul li {
+    border: 3px solid #091353;
+    box-shadow: 2px 2px #091353;
+    border-radius: 3px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  
+  .izquierdo ul li:hover {
+    border: 3px solid #B2F9FC;
+  }
+  
+  .izquierdo ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #091353;
+    transition: 0.5s;
+  }
+  
+  .izquierdo ul li a:hover {
+    color: #B2F9FC;
+  }
+  
+  .central ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .central ul li {
+    border: 3px solid #091353;
+    box-shadow: 2px 2px #091353;
+    border-radius: 3px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  
+  .central ul li:hover {
+    border: 3px solid #B2F9FC;
+  }
+  
+  .central ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #091353;
+    transition: 0.5s;
+  }
+  
+  .central ul li a:hover {
+    color: #B2F9FC;
+  }
+  
+  .derecho ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+  
+  .derecho ul li {
+    border: 3px solid #091353;
+    box-shadow: 2px 2px #091353;
+    border-radius: 3px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  
+  .derecho ul li:hover {
+    border: 3px solid #B2F9FC;
+  }
+  
+  .derecho ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #091353;
+    transition: 0.5s;
+  }
+  
+  .derecho ul li a:hover {
+    color: #B2F9FC;
+  }
+  
+  .n1 {
+    grid-area: izquierdo;
+    padding: 15px;
+  }
+  
+  .n2 {
+    grid-area: central;
+    padding: 15px;
+  }
+  
+  .n3 {
+    grid-area: derecho;
+    padding: 15px;
+  }
+  
+ 
