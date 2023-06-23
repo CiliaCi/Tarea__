@@ -1,0 +1,26 @@
+//M I    C U E N T A CON BOOTSRAP 
+
+.form-control {
+    width: auto;
+}
+
+.box__container__cuenta{
+    padding: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .container__cuenta{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        color: #091353;
+        border-color: #091353;
+        border-style: groove;
+        border-radius: 5px;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

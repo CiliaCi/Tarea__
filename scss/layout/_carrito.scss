@@ -1,0 +1,63 @@
+//M I    C A R R I T O               
+
+.altocarrito {
+
+    .carrito-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 50px;
+
+        .tabla-carrito {
+            width: 50%;
+            margin: 0 auto;
+            border-collapse: collapse;
+
+            td {
+                padding: 10px;
+                border: 1px solid #ddd;
+            }
+
+            tr:first-child {
+                background-color: #f5f5f5;
+            }
+        }
+    }
+
+    .pagination-container {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+
+        .pagination {
+            display: flex;
+            list-style: none;
+            padding: 0;
+
+            .page-item {
+                margin: 0 5px;
+
+                .page-link {
+                    display: inline-block;
+                    padding: 5px 10px;
+                    background-color: #f5f5f5;
+                    border: 1px solid #ddd;
+                    text-decoration: none;
+                    color: #333;
+                }
+
+                &.active { 
+
+                    .page-link {
+                        background-color: #333;
+                        color: #fff;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
