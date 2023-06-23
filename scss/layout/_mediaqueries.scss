@@ -1,60 +1,284 @@
 // M E D I A     Q U E R I E S                   
+// Estilos para tablets y dispositivos con ancho mínimo de 768px y máximo de 991px 
 
-// Estilos para dispositivos móviles hasta 600px 
+@media (min-width: 769px) and (max-width: 1200px) {
 
-@media (max-width: 600px) {
-
-    // NAVEGADOR
-    header {
-        height: 100px;
-    }
+    //NAVEGADOOR 
+    
 
     .navegador {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
-        grid-template-areas: "izquierdo central derecho";
-        height: 80px;
+        grid-template-areas: "izquierdo central central derecho";
+    
+        .izquierdo{
+
+            ul {
+                gap: 15px;
+
+                li {
+                    border: 2px solid #091353;
+                    box-shadow: 1px 1px #091353;
+                    border-radius: 2px;
+
+                    a {
+                        font-size: 18px;
+                    }
+
+                }
+            }        
+        }  
+        
+        .central{
+
+            ul {
+                gap: 15px;
+
+                li {
+                    border: 2px solid #091353;
+                    box-shadow: 1px 1px #091353;
+                    border-radius: 2px;
+
+                    a {
+                        font-size: 18px;
+                    }                
+                }             
+            }
+        }
+        
+        .derecho{
+
+            ul {
+                justify-content: flex-end;
+                gap: 10px;
+
+                li {
+                    border: 2px solid #091353;
+                    box-shadow: 1px 1px #091353;
+                    border-radius: 2px;
+                }
+            }        
+        }        
     }
 
-    .izquierdo ul {
+
+    // ICONOS DE FOOTER Y NAV
+    .bi {
+        width: 35px;
+        height: 35px;
+    }
+    
+    //INICIO
+    #carouselExampleInterval .carousel-inner {
+        
+        margin-bottom: -150px;
+    }
+    
+    .aparte {
+        border: solid 3px #091353;
+        padding: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+        .principal {
+            font-size: 16px;
+            padding: 35px;
+            padding-top: 5px;
+
+            
+        }        
+        
+        .masprincipal{
+
+            ul{
+
+                li {
+                    font-size: 16px;
+                    margin: 0px;
+                }                
+            }
+        }
+    }
+
+    //PRODUCTOS
+  
+    .main-box {
+        padding: 10px;
+
+        .cajas{
+            gap: 10px;
+            padding: 10px;
+
+            .caja {
+                width: 200px;
+                height: 200px;
+
+                .card{
+
+                    &:hover {
+                        width: 210px;
+                        height: 210px;
+                    
+                    }    
+                    
+                    .card-img-top {
+                        width: 200px;
+                        height: 100px;
+                    }      
+                    
+                    .card-body{
+
+                        .card-title{
+                            font-size: 16px;
+                        }                        
+                    }
+                }                
+            }
+        }        
+    }
+    
+
+
+  
+    //HISTORIA
+  
+    .grillas {
+        padding: 5px;
+        padding-left: 50px;
         gap: 10px;
+        padding-top: 20px;
+
+        .grilla{
+
+            h4 {
+                font-size: 15px;
+            }
+            
+            p {
+                font-size: 12px;
+            }            
+        }
+    }
+    
+    //CUENTA
+    
+    .box__container__cuenta{
+        padding: 30px;
+        flex-direction: row;
+        gap: 20px;
+        font-size: 10px;
+
+        .container__cuenta{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 80%;
+
+            h3{
+            font-size: 20px;
+            }            
+        }        
     }
 
-    .central ul {
-        gap: 10px;
+    .form-control{
+    font-size: 14px;
     }
 
-    .derecho ul {
-        justify-content: center;
-        gap: 10px;
-    }
+    //CARRITO
 
-    .izquierdo ul li {
-        border: 2px solid #091353;
-        box-shadow: 1px 1px #091353;
-        border-radius: 2px;
-    }
+    .altocarrito{
+        font-size: 18px;
 
-    .central ul li {
-        border: 2px solid #091353;
-        box-shadow: 1px 1px #091353;
-        border-radius: 2px;
+        .carrito-container {
+            margin-bottom: 20px;
+            margin-top: 50px;
+
+            .tabla-carrito {
+                width: 75%;
+
+                td {
+                    padding: 5px;
+                }                
+            }            
+        }  
+        
+        .pagination-container {
+            padding-bottom: 20px;
+        }        
     } 
+}
+// Estilos para dispositivos móviles hasta 600px 
 
-    .derecho ul li {
-        border: 2px solid #091353;
-        box-shadow: 1px 1px #091353;
-        border-radius: 2px;
+@media (max-width: 768px) {
+
+    // NAVEGADOR
+
+    header {
+        height: 100px;
+
+        .navegador {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "izquierdo central derecho";
+            height: 80px;
+
+            .izquierdo{
+
+                ul {
+                    gap: 10px;
+
+                    li {
+                        border: 2px solid #091353;
+                        box-shadow: 1px 1px #091353;
+                        border-radius: 2px;
+
+                        a {
+                            font-size: 16px;
+                        }
+
+                    }
+                }        
+            }  
+            
+            .central{
+
+                ul {
+                    gap: 10px;
+
+                    li {
+                        border: 2px solid #091353;
+                        box-shadow: 1px 1px #091353;
+                        border-radius: 2px;
+
+                        a {
+                            font-size: 16px;
+                        }                
+                    }             
+                }
+            }
+            
+            .derecho{
+
+                ul {
+                    justify-content: center;
+                    gap: 10px;
+
+                    li {
+                        border: 2px solid #091353;
+                        box-shadow: 1px 1px #091353;
+                        border-radius: 2px;
+                    }
+                }        
+            }   
+        }
     }
 
-    .izquierdo ul li a {
-        font-size: 16px;
-    }
+    
 
-    .central ul li a {
-        font-size: 16px;
-    }
-
+    // ICONOS DE FOOTER Y NAV
     .bi {
         width: 25px;
         height: 25px;
@@ -66,183 +290,6 @@
         margin-bottom: -150px;
     }
 
-  .aparte {
-    border: solid 3px #091353;
-    padding: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  .principal {
-    font-size: 10px;
-    padding: 25px;
-    padding-top: 5px;
-  }
-  .masprincipal ul li {
-    font-size: 16px;
-    margin: 0px;
-  }
-
-  //PRODUCTOS
-
-  .main-box {
-    padding: 10px;
-  }
-  
-  .cajas{
-    gap: 10px;
-    padding: 10px;
-  }
-  
-  .caja {
-    width: 200px;
-    height: 200px;
-  }
-  
-  .card:hover {
-    width: 210px;
-    height: 210px;
-    
-  }
-  
-  .card-img-top {
-    width: 200px;
-    height: 100px;
-  }
-  
-  
-  .card-title{
-    font-size: 16px;
-  }
-
-  //HISTORIA
-
-  .grillas {
-    padding: 5px;
-    padding-left: 50px;
-    gap: 10px;
-    padding-top: 20px;
-  }
-  
-  .grilla h4 {
-    font-size: 10px;
-  }
-  
-  .grilla p {
-    font-size: 7px;
-  } 
-
-  //CUENTA
-
-.box__container__cuenta{
-  padding: 20px;
-  flex-direction: column;
-  gap: 20px;
-  font-size: 10px;
-}
-
-.container__cuenta{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 80%;
-}
-
-.container__cuenta h3{
-    font-size: 20px;
-}
-.form-control{
-    font-size: 14px;
-}
-    // CARRRITO
-
-    .altocarrito{
-        font-size: 14px;
-    }
-    .carrito-container {
-        margin-bottom: 10px;
-        margin-top: 20px;
-    }
-
-    .tabla-carrito {
-        width: 75%;
-    }
-
-    .tabla-carrito td {
-        padding: 5px;
-    }
-
-    .pagination-container {
-        padding-bottom: 20px;
-    }
-
-}
-
-// Estilos para tablets y dispositivos con ancho mínimo de 768px y máximo de 991px 
-
-@media (min-width: 601px) and (max-width: 1000px) {
-  
-    //NAVEGADOOR 
-  
-    .navegador {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: "izquierdo central central derecho";
-    }
-  
-    .izquierdo ul {
-        gap: 15px;
-    }
-  
-    .central ul {
-        gap: 15px;
-    }
-  
-    .derecho ul {
-        justify-content: flex-end;
-        gap: 10px;
-    }
-    
-    .izquierdo ul li {
-        border: 2px solid #091353;
-        box-shadow: 1px 1px #091353;
-        border-radius: 2px;
-    }
-  
-    .central ul li {
-        border: 2px solid #091353;
-        box-shadow: 1px 1px #091353;
-        border-radius: 2px;
-    } 
-  
-    .derecho ul li {
-        border: 2px solid #091353;
-        box-shadow: 1px 1px #091353;
-        border-radius: 2px;
-    }
-  
-    .izquierdo ul li a {
-        font-size: 18px;
-    }
-  
-    .central ul li a {
-        font-size: 18px;
-    }
-  
-    .bi {
-        width: 35px;
-        height: 35px;
-    }
-    
-    //INICIO
-    #carouselExampleInterval .carousel-inner {
-        
-        margin-bottom: -150px;
-    }
-  
     .aparte {
         border: solid 3px #091353;
         padding: 0px;
@@ -252,107 +299,126 @@
         margin-bottom: 15px;
         margin-left: 0px;
         margin-right: 0px;
+
+        .principal {
+            font-size: 10px;
+            padding: 25px;
+            padding-top: 5px;
+        }    
+        
+        .masprincipal{
+
+            ul{
+                
+                li {
+                    font-size: 16px;
+                    margin: 0px;
+                }
+            }
+        }
     }
-  
-    .principal {
-        font-size: 16px;
-        padding: 35px;
-        padding-top: 5px;
-    }
-    .masprincipal ul li {
-        font-size: 16px;
-        margin: 0px;
-    }
-  
-    //PRODUCTOS
-  
+
+  //PRODUCTOS
+
     .main-box {
         padding: 10px;
+
+        .cajas{
+            gap: 10px;
+            padding: 10px;
+
+            .caja {
+                width: 200px;
+                height: 200px;
+
+                .card{
+
+                    &:hover {
+                        width: 210px;
+                        height: 210px;
+                    
+                    }    
+                    
+                    .card-img-top {
+                        width: 200px;
+                        height: 100px;
+                    }      
+                    
+                    .card-body{
+
+                        .card-title{
+                            font-size: 16px;
+                        }                        
+                    }
+                }                
+            }
+        }        
     }
-    
-    .cajas{
-        gap: 10px;
-        padding: 10px;
-    }
-    
-    .caja {
-        width: 200px;
-        height: 200px;
-    }
-    
-    .card:hover {
-        width: 210px;
-        height: 210px;
-      
-    }
-    
-    .card-img-top {
-        width: 200px;
-        height: 100px;
-    }
-    
-    
-    .card-title{
-        font-size: 16px;
-    }
-  
-    //HISTORIA
-  
+
+  //HISTORIA
+
     .grillas {
         padding: 5px;
         padding-left: 50px;
         gap: 10px;
         padding-top: 20px;
-    }
-    
-    .grilla h4 {
-        font-size: 15px;
-    }
-    
-    .grilla p {
-        font-size: 12px;
+
+        .grilla{
+
+            h4 {
+                font-size: 10px;
+            }
+            
+            p {
+                font-size: 7px;
+            }            
+        }
     } 
-  
-    //CUENTA
-  
+
+  //CUENTA
+
     .box__container__cuenta{
-        padding: 30px;
-        flex-direction: row;
+        padding: 20px;
+        flex-direction: column;
         gap: 20px;
         font-size: 10px;
-    }
-  
-    .container__cuenta{
-        padding-top: 20px;
-        padding-bottom: 20px;
-        width: 80%;
-    }
-  
-    .container__cuenta h3{
-    font-size: 20px;
-    }
-    .form-control{
-    font-size: 14px;
-    }
-  //CARRITO
 
-    .altocarrito{
-        font-size: 18px;
+        .container__cuenta{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 80%;
+
+            h3{
+            font-size: 20px;
+            }            
+        }     
     }
-    .carrito-container {
-        margin-bottom: 20px;
-        margin-top: 50px;
+
+    .form-control{
+        font-size: 14px;
     }
-    
-    .tabla-carrito {
-        width: 75%;
+
+    // CARRRITO
+
+    .altocarrito {
+        font-size: 14px;
+
+        .carrito-container {
+            margin-bottom: 10px;
+            margin-top: 20px;
+
+            .tabla-carrito {
+                width: 75%;
+
+                td {
+                    padding: 5px;
+                }                
+            }            
+        }  
+        
+        .pagination-container {
+            padding-bottom: 20px;
+        }        
     }
-    
-        .tabla-carrito td {
-    padding: 5px;
-    }
-    
-    .pagination-container {
-        padding-bottom: 20px;
-    } 
+
 }

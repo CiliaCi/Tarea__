@@ -4,13 +4,14 @@
     width: auto;
 }
 
-.box__container__cuenta{
+.box__container__cuenta{    
     padding: 70px;
-    display: flex;
+    display: flex;  
     justify-content: space-around;
     align-items: center;
 
     .container__cuenta{
+        @extend .cuenta-extender;
         padding-top: 50px;
         padding-bottom: 50px;
         color: #091353;
@@ -24,3 +25,4 @@
         align-items: center;
     }
 }
+

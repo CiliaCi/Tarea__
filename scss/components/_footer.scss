@@ -27,6 +27,12 @@
 .bi {
   width: 50px;
   height: 50px;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover{
+    //transform: rotate(360deg);
+    transform: scale(1.2);
+  }
 }
 
 .bi-facebook {
@@ -40,3 +46,5 @@
 .bi-tiktok {
   color: black;
 }
+
+

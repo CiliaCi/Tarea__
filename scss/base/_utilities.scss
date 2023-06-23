@@ -1,0 +1,12 @@
+// MIXIN SIN PARAMETRO
+
+@mixin carro-mixin {
+    border: dotted 3px #091353;
+}
+
+// EXTEND 
+
+.cuenta-extender {
+        background-color: #77b5de;        
+}
+

@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.cuenta-extender, .box__container__cuenta .container__cuenta {
+  background-color: #77b5de;
+}
+
 header {
   background-color: #9D84B7;
   box-shadow: 3px 3px 3px #091353;
@@ -37,10 +41,13 @@ header .navegador .izquierdo ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.5s;
+  transition: 1s;
 }
 header .navegador .izquierdo ul li:hover {
   border: 3px solid #B2F9FC;
+  transform: rotate(360deg);
+  border-radius: 100%;
+  padding: 15px;
 }
 header .navegador .izquierdo ul li a {
   text-decoration: none;
@@ -148,6 +155,10 @@ header .navegador .n3 {
 .bi {
   width: 50px;
   height: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+.bi:hover {
+  transform: scale(1.2);
 }
 
 .bi-facebook {
@@ -434,6 +445,7 @@ header .navegador .n3 {
   margin-top: 50px;
 }
 .altocarrito .carrito-container .tabla-carrito {
+  border: dotted 3px #091353;
   width: 50%;
   margin: 0 auto;
   border-collapse: collapse;
@@ -471,177 +483,42 @@ header .navegador .n3 {
   color: #fff;
 }
 
-@media (max-width: 600px) {
-  header {
-    height: 100px;
-  }
-  .navegador {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "izquierdo central derecho";
-    height: 80px;
-  }
-  .izquierdo ul {
-    gap: 10px;
-  }
-  .central ul {
-    gap: 10px;
-  }
-  .derecho ul {
-    justify-content: center;
-    gap: 10px;
-  }
-  .izquierdo ul li {
-    border: 2px solid #091353;
-    box-shadow: 1px 1px #091353;
-    border-radius: 2px;
-  }
-  .central ul li {
-    border: 2px solid #091353;
-    box-shadow: 1px 1px #091353;
-    border-radius: 2px;
-  }
-  .derecho ul li {
-    border: 2px solid #091353;
-    box-shadow: 1px 1px #091353;
-    border-radius: 2px;
-  }
-  .izquierdo ul li a {
-    font-size: 16px;
-  }
-  .central ul li a {
-    font-size: 16px;
-  }
-  .bi {
-    width: 25px;
-    height: 25px;
-  }
-  #carouselExampleInterval .carousel-inner {
-    margin-bottom: -150px;
-  }
-  .aparte {
-    border: solid 3px #091353;
-    padding: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .principal {
-    font-size: 10px;
-    padding: 25px;
-    padding-top: 5px;
-  }
-  .masprincipal ul li {
-    font-size: 16px;
-    margin: 0px;
-  }
-  .main-box {
-    padding: 10px;
-  }
-  .cajas {
-    gap: 10px;
-    padding: 10px;
-  }
-  .caja {
-    width: 200px;
-    height: 200px;
-  }
-  .card:hover {
-    width: 210px;
-    height: 210px;
-  }
-  .card-img-top {
-    width: 200px;
-    height: 100px;
-  }
-  .card-title {
-    font-size: 16px;
-  }
-  .grillas {
-    padding: 5px;
-    padding-left: 50px;
-    gap: 10px;
-    padding-top: 20px;
-  }
-  .grilla h4 {
-    font-size: 10px;
-  }
-  .grilla p {
-    font-size: 7px;
-  }
-  .box__container__cuenta {
-    padding: 20px;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 10px;
-  }
-  .container__cuenta {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 80%;
-  }
-  .container__cuenta h3 {
-    font-size: 20px;
-  }
-  .form-control {
-    font-size: 14px;
-  }
-  .altocarrito {
-    font-size: 14px;
-  }
-  .carrito-container {
-    margin-bottom: 10px;
-    margin-top: 20px;
-  }
-  .tabla-carrito {
-    width: 75%;
-  }
-  .tabla-carrito td {
-    padding: 5px;
-  }
-  .pagination-container {
-    padding-bottom: 20px;
-  }
-}
-@media (min-width: 601px) and (max-width: 1000px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   .navegador {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "izquierdo central central derecho";
   }
-  .izquierdo ul {
+  .navegador .izquierdo ul {
     gap: 15px;
   }
-  .central ul {
+  .navegador .izquierdo ul li {
+    border: 2px solid #091353;
+    box-shadow: 1px 1px #091353;
+    border-radius: 2px;
+  }
+  .navegador .izquierdo ul li a {
+    font-size: 18px;
+  }
+  .navegador .central ul {
     gap: 15px;
   }
-  .derecho ul {
+  .navegador .central ul li {
+    border: 2px solid #091353;
+    box-shadow: 1px 1px #091353;
+    border-radius: 2px;
+  }
+  .navegador .central ul li a {
+    font-size: 18px;
+  }
+  .navegador .derecho ul {
     justify-content: flex-end;
     gap: 10px;
   }
-  .izquierdo ul li {
+  .navegador .derecho ul li {
     border: 2px solid #091353;
     box-shadow: 1px 1px #091353;
     border-radius: 2px;
-  }
-  .central ul li {
-    border: 2px solid #091353;
-    box-shadow: 1px 1px #091353;
-    border-radius: 2px;
-  }
-  .derecho ul li {
-    border: 2px solid #091353;
-    box-shadow: 1px 1px #091353;
-    border-radius: 2px;
-  }
-  .izquierdo ul li a {
-    font-size: 18px;
-  }
-  .central ul li a {
-    font-size: 18px;
   }
   .bi {
     width: 35px;
@@ -660,35 +537,35 @@ header .navegador .n3 {
     margin-left: 0px;
     margin-right: 0px;
   }
-  .principal {
+  .aparte .principal {
     font-size: 16px;
     padding: 35px;
     padding-top: 5px;
   }
-  .masprincipal ul li {
+  .aparte .masprincipal ul li {
     font-size: 16px;
     margin: 0px;
   }
   .main-box {
     padding: 10px;
   }
-  .cajas {
+  .main-box .cajas {
     gap: 10px;
     padding: 10px;
   }
-  .caja {
+  .main-box .cajas .caja {
     width: 200px;
     height: 200px;
   }
-  .card:hover {
+  .main-box .cajas .caja .card:hover {
     width: 210px;
     height: 210px;
   }
-  .card-img-top {
+  .main-box .cajas .caja .card .card-img-top {
     width: 200px;
     height: 100px;
   }
-  .card-title {
+  .main-box .cajas .caja .card .card-body .card-title {
     font-size: 16px;
   }
   .grillas {
@@ -697,10 +574,10 @@ header .navegador .n3 {
     gap: 10px;
     padding-top: 20px;
   }
-  .grilla h4 {
+  .grillas .grilla h4 {
     font-size: 15px;
   }
-  .grilla p {
+  .grillas .grilla p {
     font-size: 12px;
   }
   .box__container__cuenta {
@@ -709,12 +586,12 @@ header .navegador .n3 {
     gap: 20px;
     font-size: 10px;
   }
-  .container__cuenta {
+  .box__container__cuenta .container__cuenta {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 80%;
   }
-  .container__cuenta h3 {
+  .box__container__cuenta .container__cuenta h3 {
     font-size: 20px;
   }
   .form-control {
@@ -723,17 +600,152 @@ header .navegador .n3 {
   .altocarrito {
     font-size: 18px;
   }
-  .carrito-container {
+  .altocarrito .carrito-container {
     margin-bottom: 20px;
     margin-top: 50px;
   }
-  .tabla-carrito {
+  .altocarrito .carrito-container .tabla-carrito {
     width: 75%;
   }
-  .tabla-carrito td {
+  .altocarrito .carrito-container .tabla-carrito td {
     padding: 5px;
   }
-  .pagination-container {
+  .altocarrito .pagination-container {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 100px;
+  }
+  header .navegador {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "izquierdo central derecho";
+    height: 80px;
+  }
+  header .navegador .izquierdo ul {
+    gap: 10px;
+  }
+  header .navegador .izquierdo ul li {
+    border: 2px solid #091353;
+    box-shadow: 1px 1px #091353;
+    border-radius: 2px;
+  }
+  header .navegador .izquierdo ul li a {
+    font-size: 16px;
+  }
+  header .navegador .central ul {
+    gap: 10px;
+  }
+  header .navegador .central ul li {
+    border: 2px solid #091353;
+    box-shadow: 1px 1px #091353;
+    border-radius: 2px;
+  }
+  header .navegador .central ul li a {
+    font-size: 16px;
+  }
+  header .navegador .derecho ul {
+    justify-content: center;
+    gap: 10px;
+  }
+  header .navegador .derecho ul li {
+    border: 2px solid #091353;
+    box-shadow: 1px 1px #091353;
+    border-radius: 2px;
+  }
+  .bi {
+    width: 25px;
+    height: 25px;
+  }
+  #carouselExampleInterval .carousel-inner {
+    margin-bottom: -150px;
+  }
+  .aparte {
+    border: solid 3px #091353;
+    padding: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .aparte .principal {
+    font-size: 10px;
+    padding: 25px;
+    padding-top: 5px;
+  }
+  .aparte .masprincipal ul li {
+    font-size: 16px;
+    margin: 0px;
+  }
+  .main-box {
+    padding: 10px;
+  }
+  .main-box .cajas {
+    gap: 10px;
+    padding: 10px;
+  }
+  .main-box .cajas .caja {
+    width: 200px;
+    height: 200px;
+  }
+  .main-box .cajas .caja .card:hover {
+    width: 210px;
+    height: 210px;
+  }
+  .main-box .cajas .caja .card .card-img-top {
+    width: 200px;
+    height: 100px;
+  }
+  .main-box .cajas .caja .card .card-body .card-title {
+    font-size: 16px;
+  }
+  .grillas {
+    padding: 5px;
+    padding-left: 50px;
+    gap: 10px;
+    padding-top: 20px;
+  }
+  .grillas .grilla h4 {
+    font-size: 10px;
+  }
+  .grillas .grilla p {
+    font-size: 7px;
+  }
+  .box__container__cuenta {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 10px;
+  }
+  .box__container__cuenta .container__cuenta {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+  }
+  .box__container__cuenta .container__cuenta h3 {
+    font-size: 20px;
+  }
+  .form-control {
+    font-size: 14px;
+  }
+  .altocarrito {
+    font-size: 14px;
+  }
+  .altocarrito .carrito-container {
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .altocarrito .carrito-container .tabla-carrito {
+    width: 75%;
+  }
+  .altocarrito .carrito-container .tabla-carrito td {
+    padding: 5px;
+  }
+  .altocarrito .pagination-container {
     padding-bottom: 20px;
   }
 }
