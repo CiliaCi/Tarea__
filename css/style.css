@@ -76,6 +76,7 @@ header {
   gap: 30px;
 }
 
+
 .central ul li {
   border: 3px solid #091353;
   box-shadow: 2px 2px #091353;
@@ -254,14 +255,18 @@ header {
 
 /*                   P R O D U C T O S                   */
 /*              F L E X B O X                          */
-.cajas {
+
+.main-box {
+  padding: 40px;
+}
+
+.cajas{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 1000px;
-  gap: 40px;
+  gap: 50px;
   padding: 40px;
 }
 
@@ -274,94 +279,45 @@ header {
   flex-direction: column;
 }
 
-.caja:hover {
-  background-color: #4c5ab0;
+.card{
+  border: 1px solid #091353;
+  box-shadow: 1px 1px #091353;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  transition: 0.6s;
 }
 
-.letra :hover {
-  color: white;
+.card:hover {
+  width: 320px;
+  height: 320px;
+  border: 3px solid #091353;
+  box-shadow: 2px 2px #091353;
+  background-color: #9D84B7;
+  
 }
 
-.letra h4 {
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.caja img {
-  width: 80%;
+.card-img-top {
+  width: 300px;
   height: 200px;
-  object-fit: cover;
 }
 
-.caja img:hover {
-  width: 100%;
+
+.card-body{
+  color: #091353;
+  display: flex;
+  justify-content: center;
 }
 
-.c1 {
-  width: 25%;
-  height: 280px;
-  border: solid;
-  border-color: #9D84B7;
-  border-width: 4px;
-  border-radius: 5px;
+.card-body:hover {
+  color: #B2F9FC;
 }
 
-.c2 {
-  width: 25%;
-  height: 280px;
-  border: solid;
-  border-color: #9D84B7;
-  border-width: 4px;
-  border-radius: 5px;
-}
-
-.c3 {
-  width: 25%;
-  height: 280px;
-  border: solid;
-  border-color: #9D84B7;
-  border-width: 4px;
-  border-radius: 5px;
-}
-
-.c4 {
-  width: 25%;
-  height: 280px;
-  border: solid;
-  border-color: #9D84B7;
-  border-width: 4px;
-  border-radius: 5px;
-}
-
-.c5 {
-  width: 25%;
-  height: 280px;
-  border: solid;
-  border-color: #9D84B7;
-  border-width: 4px;
-  border-radius: 5px;
-}
-
-.c6 {
-  width: 25%;
-  height: 280px;
-  border: solid;
-  border-color: #9D84B7;
-  border-width: 4px;
-  border-radius: 5px;
-}
-
-.c7 {
-  width: 25%;
-  height: 280px;
-  border: solid;
-  border-color: #9D84B7;
-  border-width: 4px;
-  border-radius: 5px;
-}
 
 /*          M I    C U E N T A                   */
 /* MAIN CON BOOTSRAP */
+
+
 
 .form-control {
   width: auto;
@@ -419,7 +375,6 @@ header {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 40px;
   font-weight: bold;
   border-radius: 20px;
   box-shadow: 3px 3px 3px #091353;
@@ -617,8 +572,11 @@ footer {
 
 /*               M E D I A     Q U E R I E S                   */
 
-/* Estilos para dispositivos móviles hasta 767px */
-@media (max-width: 767px) {
+/* Estilos para dispositivos móviles hasta 600px */
+
+@media (max-width: 600px) {
+  
+  /*NAVEGADOOR*/
   header {
     height: 100px;
   }
@@ -673,7 +631,7 @@ footer {
     width: 25px;
     height: 25px;
   }
-
+  /*INICIO*/
   #carouselExampleInterval .carousel-inner {
       
     margin-bottom: -150px;
@@ -700,97 +658,272 @@ footer {
     margin: 0px;
   }
 
-  /*revisar bien */
+  /*PRODUCTOS*/
 
-  .cajas {
-    height: auto;
-    padding: 20px;
+  .main-box {
+    padding: 10px;
   }
-
-  .c1, .c2, .c3, .c4, .c5, .c6, .c7 {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+  
+  .cajas{
+    gap: 10px;
+    padding: 10px;
   }
-
-  .container__cuenta {
-    width: 80%;
+  
+  .caja {
+    width: 200px;
+    height: 200px;
   }
-
-  .grillas {
-    padding-left: 20px;
-    grid-template-columns: repeat(2, 1fr);
+  
+  .card:hover {
+    width: 210px;
+    height: 210px;
+    
   }
-
-  .g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8 {
-    width: 100%;
-    height: 150px;
+  
+  .card-img-top {
+    width: 200px;
+    height: 100px;
   }
-
-  .historia__video {
-    padding: 5px;
-  }
-
-  .carrito-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .tabla-carrito {
-    width: 100%;
-  }
-}
-
-/* Estilos para tablets y dispositivos con ancho mínimo de 768px y máximo de 991px */
-@media (min-width: 768px) and (max-width: 991px) {
-  header {
-    height: 90px;
+  
+  
+  .card-title{
     font-size: 16px;
   }
 
-  .navegador {
-    height: 90px;
-  }
-
-  .izquierdo ul {
-    gap: 15px;
-  }
-
-  .central ul {
-    gap: 15px;
-  }
-
-  .derecho ul {
-    gap: 15px;
-  }
-
-
-
-  .masprincipal ul li {
-    font-size: 18px;
-    margin: 5px;
-  }
-
-
-  .cajas {
-    padding: 30px;
-  }
-
-  .container__cuenta {
-    width: 60%;
-  }
+  /*HISTORIA*/
 
   .grillas {
+    padding: 5px;
     padding-left: 50px;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-top: 20px;
   }
+  
+  .grilla h4 {
+    font-size: 10px;
+  }
+  
+  .grilla p {
+    font-size: 7px;
+  } 
 
-  .g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8 {
-    width: 100%;
-    height: 180px;
-  }
+  /*CUENTA*/
 
-  .historia__video {
-    padding: 10px;
-  }
+.box__container__cuenta{
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 10px;
 }
+
+.container__cuenta{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+}
+
+.container__cuenta h3{
+  font-size: 20px;
+}
+.form-control{
+  font-size: 14px;
+}
+/*CARRRITO*/
+
+.altocarrito{
+  font-size: 14px;
+}
+.carrito-container {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.tabla-carrito {
+  width: 75%;
+}
+
+.tabla-carrito td {
+  padding: 5px;
+}
+
+.pagination-container {
+  padding-bottom: 20px;
+}
+
+}
+
+/* Estilos para tablets y dispositivos con ancho mínimo de 768px y máximo de 991px */
+@media (min-width: 601px) and (max-width: 991px) {
+  
+    /*NAVEGADOOR*/   
+  
+    .navegador {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas: "izquierdo central central derecho";
+    }
+  
+    .izquierdo ul {
+      gap: 15px;
+    }
+  
+    .central ul {
+      gap: 15px;
+    }
+  
+    .derecho ul {
+      justify-content: flex-end;
+      gap: 10px;
+    }
+  
+    .izquierdo ul li {
+      border: 2px solid #091353;
+      box-shadow: 1px 1px #091353;
+      border-radius: 2px;
+    }
+  
+    .central ul li {
+      border: 2px solid #091353;
+      box-shadow: 1px 1px #091353;
+      border-radius: 2px;
+    } 
+  
+    .derecho ul li {
+      border: 2px solid #091353;
+      box-shadow: 1px 1px #091353;
+      border-radius: 2px;
+    }
+  
+    .izquierdo ul li a {
+      font-size: 18px;
+    }
+  
+    .central ul li a {
+      font-size: 18px;
+    }
+  
+    .bi {
+      width: 35px;
+      height: 35px;
+    }
+    /*INICIO*/
+    #carouselExampleInterval .carousel-inner {
+        
+      margin-bottom: -150px;
+    }
+  
+    .aparte {
+      border: solid 3px #091353;
+      padding: 0px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      margin-top: 0px;
+      margin-bottom: 15px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  
+    .principal {
+      font-size: 16px;
+      padding: 35px;
+      padding-top: 5px;
+    }
+    .masprincipal ul li {
+      font-size: 16px;
+      margin: 0px;
+    }
+  
+    /*PRODUCTOS*/
+  
+    .main-box {
+      padding: 10px;
+    }
+    
+    .cajas{
+      gap: 10px;
+      padding: 10px;
+    }
+    
+    .caja {
+      width: 200px;
+      height: 200px;
+    }
+    
+    .card:hover {
+      width: 210px;
+      height: 210px;
+      
+    }
+    
+    .card-img-top {
+      width: 200px;
+      height: 100px;
+    }
+    
+    
+    .card-title{
+      font-size: 16px;
+    }
+  
+    /*HISTORIA*/
+  
+    .grillas {
+      padding: 5px;
+      padding-left: 50px;
+      gap: 10px;
+      padding-top: 20px;
+    }
+    
+    .grilla h4 {
+      font-size: 15px;
+    }
+    
+    .grilla p {
+      font-size: 12px;
+    } 
+  
+    /*CUENTA*/
+  
+  .box__container__cuenta{
+    padding: 30px;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 10px;
+  }
+  
+  .container__cuenta{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+  }
+  
+  .container__cuenta h3{
+    font-size: 20px;
+  }
+  .form-control{
+    font-size: 14px;
+  }
+  /*CARRRITO*/
+  
+  .altocarrito{
+    font-size: 18px;
+  }
+  .carrito-container {
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  
+  .tabla-carrito {
+    width: 75%;
+  }
+  
+  .tabla-carrito td {
+    padding: 5px;
+  }
+  
+  .pagination-container {
+    padding-bottom: 20px;
+  }
+  
+  }
+
